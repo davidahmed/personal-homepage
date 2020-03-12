@@ -1,6 +1,7 @@
 <template>
   <div class='display-card'>
     <h2> {{ book.title }} </h2>
+    <span class="tag" v-for="tag in book.tags" :key="tag"> {{ tag }} </span>
   </div>
 </template>
 

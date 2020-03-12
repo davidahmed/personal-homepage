@@ -3,6 +3,8 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
+require("./assets/bulma.css")
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')
