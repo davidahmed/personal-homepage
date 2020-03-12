@@ -10,7 +10,7 @@
       <span> Selected fields: {{ selectedFields }} </span>
     </div>
 
-    <div v-bind:key="item.title" v-for="item in bookList">
+    <div v-bind:key="item.title" v-for="item in filteredBookList">
       <Book v-bind:book="item" />
     </div>
 
@@ -19,6 +19,7 @@
 
 <script>
 import Book from './Book.vue';
+
 import { libraryResources } from '../assets/library-resources.js';
 
 export default {
@@ -27,19 +28,31 @@ export default {
     Book
   },
 
-  props: {
-    name: String,
-  },
+  props: [],
 
   data() {
     return {
       bookList: libraryResources,
       fields: ['CS', 'Mathematics'],
       selectedFields: [],
-      }
+    }
+  },
+  computed: {
+        filteredBookList: function(){
+          let selectedFields = this.selectedFields
+          if (selectedFields.length == 0){
+            selectedFields = this.fields
+          }
+          return this.bookList.filter(function(e){
+            for (var i=0; i < e.field.length; i++){
+              if (selectedFields.indexOf(e.field[i]) >= 0){
+                return true;
+              }
+            }
+            return false;
+          });
+        }
   }
-
-
 
 }
 </script>
