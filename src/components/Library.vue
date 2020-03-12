@@ -1,8 +1,19 @@
 <template>
   <div>
+    
+    <div>
+      <label class="checkbox" v-bind:key="field" v-for="field in fields" >
+        <input type="checkbox" v-bind:value="field" v-model="selectedFields">
+        {{ field }}
+      </label>
+      <br>
+      <span> Selected fields: {{ selectedFields }} </span>
+    </div>
+
     <div v-bind:key="item.title" v-for="item in bookList">
       <Book v-bind:book="item" />
     </div>
+
   </div>
 </template>
 
@@ -17,12 +28,14 @@ export default {
   },
 
   props: {
-    name: String
+    name: String,
   },
 
   data() {
     return {
-      bookList: libraryResources
+      bookList: libraryResources,
+      fields: ['CS', 'Mathematics'],
+      selectedFields: [],
       }
   }
 

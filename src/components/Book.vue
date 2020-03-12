@@ -1,7 +1,9 @@
 <template>
-  <div class='display-card'>
+  <div class='box'>
     <h2> {{ book.title }} </h2>
-    <span class="tag" v-for="tag in book.tags" :key="tag"> {{ tag }} </span>
+    <p> {{ book.author }} </p>
+    <span class="tag is-dark" v-for="tag in book.field" :key="tag"> {{ tag }} </span>
+
   </div>
 </template>
 
@@ -15,9 +17,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-h2 {
+.display-card {
   padding-left:2em;
   text-align:left;
+  border: 1px 1px 1px 1px;
+}
+
+h2 {
+  color: black;
 }
 ul {
   list-style-type: none;
