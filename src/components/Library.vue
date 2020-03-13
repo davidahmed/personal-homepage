@@ -1,19 +1,20 @@
 <template>
   <div>
-    
-    <div>
-      <label class="checkbox" v-bind:key="field" v-for="field in fields" >
-        <input type="checkbox" v-bind:value="field" v-model="selectedFields">
-        {{ field }}
-      </label>
+    <section class="section">
+      <p> A collection of books, papers, courses and websites I have found to be especially invaluable 
+      in different fields.</p>
       <br>
-      <span> Selected fields: {{ selectedFields }} </span>
-    </div>
+      <div>
+        <label class="checkbox field-selection" v-bind:key="field" v-for="field in fields">
+          <input type="checkbox" v-bind:value="field" v-model="selectedFields">
+          {{ field }} 
+        </label> 
+      </div>
+    </section>
 
     <div v-bind:key="item.title" v-for="item in filteredBookList">
       <Book v-bind:book="item" />
     </div>
-
   </div>
 </template>
 
@@ -61,6 +62,9 @@ export default {
 <style scoped>
 h3 {
   margin: 40px 0 0;
+}
+.field-selection:not(:first-child){
+    padding-left:2em;
 }
 ul {
   list-style-type: none;
