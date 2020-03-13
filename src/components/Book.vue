@@ -2,7 +2,7 @@
   <div class='box'>
     <h2> {{ book.title }} </h2>
     <p> {{ book.author }} </p>
-    <span class="tag is-dark" v-for="tag in book.field" :key="tag"> {{ tag }} </span>
+    <span class="tag has-text-white has-background-grey-dark" v-for="tag in book.field" :key="tag"> {{ tag }} </span>
 
   </div>
 </template>
@@ -16,9 +16,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.tag{
+    margin-right:2em;
+}
 .display-card {
-  padding-left:2em;
+  padding-left:1em;
   text-align:left;
   border: 1px 1px 1px 1px;
 }
