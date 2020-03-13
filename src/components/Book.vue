@@ -1,6 +1,10 @@
 <template>
   <div class='box'>
-    <h2> {{ book.title }} </h2>
+    <h2> 
+      {{ book.title }} 
+      <span v-if="book.type == 'Book'">📘</span> 
+      <span v-else-if="book.type == 'Paper'">📄</span>
+    </h2>
     <p> {{ book.author }} </p>
     <span class="tag has-text-white has-background-grey-dark" v-for="tag in book.field" :key="tag"> {{ tag }} </span>
 
