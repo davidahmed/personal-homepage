@@ -1,6 +1,10 @@
 <template>
   <div id="app" class="columns">
-    <div class="column is-10 is-offset-1">
+    <div class="column is-4">
+      <Navigation/>
+    </div>
+
+    <div class="column is-8">
       <Library name="Welcome to Your Vue.js App"/>
     </div>
   </div>
@@ -8,11 +12,13 @@
 
 <script>
 import Library from './components/Library.vue'
+import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'App',
   components: {
-    Library
+    Library,
+    Navigation
   }
 }
 </script>
