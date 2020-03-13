@@ -1,6 +1,8 @@
 <template>
-  <div id="app">
-    <Library name="Welcome to Your Vue.js App"/>
+  <div id="app" class="columns">
+    <div class="column is-10 is-offset-1">
+      <Library name="Welcome to Your Vue.js App"/>
+    </div>
   </div>
 </template>
 
@@ -15,5 +17,6 @@ export default {
 }
 </script>
 
-<style lang='sass'>
+<style>
+
 </style>
