@@ -1,8 +1,7 @@
 # Simple Library Vue Component
 A library content I wrote while brushing up on my FE and to manage all my favorite books and resources.
 
-![](https://gifyu.com/image/IaE5)
-
+[![library.gif](https://s5.gifyu.com/images/library.gif)](https://gifyu.com/image/IaE5)
 ## Project setup
 ```
 npm install
