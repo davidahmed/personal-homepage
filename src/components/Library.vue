@@ -2,7 +2,7 @@
   <div>
     <section class="section">
       <p> A collection of books, papers, courses and websites I have found to be especially invaluable 
-      in different fields.</p>
+      in various fields of my interest.</p>
       <br>
       <div>
         <label class="checkbox field-selection" v-bind:key="field" v-for="field in fields">
@@ -19,8 +19,7 @@
 </template>
 
 <script>
-import Book from './Book.vue';
-
+import Book from './Book.vue'; 
 import { libraryResources } from '../assets/library-resources.js';
 
 export default {
@@ -34,7 +33,7 @@ export default {
   data() {
     return {
       bookList: libraryResources,
-      fields: ['CS', 'Mathematics'],
+      fields: ['CS', 'Mathematics', 'Psychology', 'History', 'Theology'],
       selectedFields: [],
     }
   },
