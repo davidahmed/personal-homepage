@@ -2,29 +2,31 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import App from './App.vue'
+import Library from './components/Library.vue'
+import Home from './components/Home.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 require("./assets/bulma.css")
 
+
 const routes = [
 	{ 
 		path: '/', 
-		name: 'home', 
-		component: App 
+		component: Home
 	},
-	{ 
-		path: '/bookshelf', 
-		name: 'bookshelf',
-		component: App},
+	{
+		path: '/bookshelf',
+		component: Library,
+	}
 ];
 
 const router = new VueRouter({
-	routes: routes
+	routes,
 });
 
 new Vue({
   render: h => h(App),
-  router: router,
+  router,
 }).$mount('#app')

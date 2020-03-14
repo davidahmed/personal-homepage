@@ -11,7 +11,6 @@
         </label> 
       </div>
     </section>
-
     <div v-bind:key="item.title" v-for="item in filteredBookList">
       <Book v-bind:book="item" />
     </div>
