@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section class="section">
-		<Quote/>
+		<Quote quote="Ohne Hast, ohne Rast." author="Johann Wolfgang Von Goethe"/>
 		<h2 class="title">Homepage</h2>
 		<p> This is my homepage; here, I publish things that I can't hold in my head for too long. </p>
 		<p> I am a jack of few trades, and informally a devoted student of the holy science of Mathematics. My main academic interest lies within the field space of fields like Artificial Intelligence, Cyber Security, Software Engineering (and PLT), and Epistemology.</p>
