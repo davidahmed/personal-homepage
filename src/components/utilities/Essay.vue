@@ -1,7 +1,7 @@
 <template>
 	<div>
-	<p class="has-text-weight-bold is-italic"> </p>
-	<p class="has-text-right is-italic"> -Johann Wolfgang von Goethe </p> 
+
+	<slot> Nothing here </slot>
 	</div>
 </template>
 
