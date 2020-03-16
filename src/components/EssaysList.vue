@@ -8,7 +8,12 @@
 		<div v-bind:key="essay.title" v-for="essay in essays">
 			<p class="has-text-weight-bold">
 			<span v-if="essay.meta && essay.meta.published && essay.meta.slug"> 
-				<router-link :to="{name: 'essays.detail', params: {slug: essay.meta.slug}}">{{ essay.title }}</router-link>
+				<router-link :to="{
+					name: 'essays.detail', 
+					params: {
+						slug: essay.meta.slug, 
+						content: essay.content,
+						title: essay.title}}">{{ essay.title }}</router-link>
 			</span> 
 			<span v-else> {{ essay.title }} </span>
 		</p>
