@@ -30,9 +30,11 @@ const routes = [
 	{
 		path: '/essays',
 		component: Essays,
+		props: true, 
 		children : [{
 			path: ':slug',
 			name: 'essays.detail',
+			props: true,
 			component: Essay
 		},
 		{
