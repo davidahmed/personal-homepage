@@ -15,7 +15,7 @@ import Essay from './components/utilities/Essay.vue'
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
-require("./assets/bulma.css")
+require("./assets/main.scss")
 
 
 const routes = [
