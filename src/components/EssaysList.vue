@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section class="section has-padding-medium">
-		<h1 class="subtitle"> Essays </h1>
+		<h1 class="title"> Essays </h1>
 		<p class="has-padding-medium"> These are essays from my personal writings, most of them won’t be available until I get the time and courage to type, format and post them here. </p>
 		<br>
 		<div v-bind:key="essay.title" v-for="essay in essays">
@@ -19,7 +19,7 @@
 		</section>
 		<br>
 		<section class="section has-padding-medium">
-		<h2 class="subtitle"> Musings </h2>
+		<h2 class="title"> Musings </h2>
 		<div v-bind:key="essay.title" v-for="essay in musings">
 			<p class="has-text-weight-bold has-padding-medium">
 			<span v-if="essay.meta && essay.meta.published && essay.meta.slug"> 
@@ -35,7 +35,7 @@
 		</section>
 		<br>
 		<section class="section has-padding-medium">
-		<h2 class="subtitle"> Personal </h2>
+		<h2 class="title"> Personal </h2>
 
 		<div v-bind:key="essay.title" v-for="essay in personal">
 			<p class="has-text-weight-bold">
@@ -48,7 +48,9 @@
 			</span> 
 			<span v-else> {{ essay.title }} </span>
 		</p>
+			<hr>
 		</div>
+
 		</section>
 
 	</div>
