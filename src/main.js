@@ -4,12 +4,15 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import Library from './components/Library.vue'
 import Home from './components/Home.vue'
-import Projects from './components/Projects.vue'
 import Skills from './components/Skills.vue'
-
 import Essays from './components/Essays.vue'
 import EssaysList from './components/EssaysList.vue'
 import Essay from './components/utilities/Essay.vue'
+
+import Projects from './components/Projects.vue'
+import ProjectsList from './components/ProjectsList.vue'
+import Project from './components/utilities/Project.vue'
+
 
 
 Vue.config.productionTip = false
@@ -48,7 +51,19 @@ const routes = [
 
 	{
 		path: '/projects',
-		component: Projects
+		component: Projects,
+		props: true,
+		children: [{
+			path: ':slug',
+			name: 'projects.detail',
+			props: true,
+			component: Project
+		},
+		{
+			path: '',
+			name: 'projects.list',
+			component: ProjectsList
+		}]
 	},
 	{
 		path: '/skills',
