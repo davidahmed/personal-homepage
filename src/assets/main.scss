@@ -1,1 +1,13 @@
 @import "~bulma/bulma";
+
+p:not(:first-child) {
+  padding-top: 1em;
+}
+
+li {
+  padding-top:0.5em;
+}
+
+.has-padding-medium {
+	padding:0.3em;
+}
