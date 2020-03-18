@@ -1,10 +1,12 @@
-<template>
+<template> 
 	<div>
-		<aside class="menu">
+		<aside class="menu is-paddingless column is-3">
 		<figure class='image is-64x64'><img src='../assets/lambda-white.png'></figure>
 			<ul class="menu-list">
-			<p> In the beginning, there was &lambda;; then there was light! </p>
-			<hr>
+			<div class='lambda-thing'>
+				<p> In the beginning, there was &lambda;; then there was light! </p>
+				<hr>
+			</div>
 			<li><router-link to="/" exact>Home</router-link></li>
 			<li><router-link to="/essays">Essays/ Musings</router-link></li>
 			<li><router-link to="/bookshelf">My Bookshelf</router-link></li>
@@ -51,7 +53,9 @@ img {
 	text-decoration: underline;
 }
 
-
+.lambda-thing{
+	padding-left: 5px;
+}
 
 
 </style>
