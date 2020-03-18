@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="columns">
-    <div class="column is-3 is-2-widescreen is-paddingless is-marginless navbar">
+    <div class="column is-3 is-2-widescreen navbar">
       <Navigation/>
     </div>
     <div class="column is-8 is-6-widescreen is-4-fullhd">
