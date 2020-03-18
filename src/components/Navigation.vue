@@ -1,5 +1,5 @@
 <template>
-	<div class="navbar">
+	<div>
 		<aside class="menu">
 		<figure class='image is-64x64'><img src='../assets/lambda-white.png'></figure>
 			<ul class="menu-list">
