@@ -1,6 +1,6 @@
 <template>
 	<div>
-	<h2 class="subtitle">{{ essay.title }}</h2>
+		<h2 class="title">{{ essay.title }}</h2>
 	<div v-html="essay.content"></div>
 	</div>
 	
@@ -21,7 +21,7 @@ export default{
 					return Essays[i]
 				}
 			}
-			return "hello"
+			return []
 		}
 	}
 }
