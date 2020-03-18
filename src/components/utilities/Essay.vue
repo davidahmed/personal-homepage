@@ -1,7 +1,9 @@
 <template>
 	<div>
+		<div class="section">
 		<h2 class="title">{{ essay.title }}</h2>
-	<div v-html="essay.content"></div>
+		<div v-html="essay.content"></div>
+		</div>
 	</div>
 	
 </template>
@@ -26,3 +28,6 @@ export default{
 	}
 }
 </script>
+<style scoped>
+
+</scoped>
