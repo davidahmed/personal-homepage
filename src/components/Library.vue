@@ -10,10 +10,11 @@
           {{ field }} 
         </label> 
       </div>
-    </section>
+      <br>
     <div v-bind:key="item.title" v-for="item in filteredBookList">
       <Book v-bind:book="item" />
     </div>
+    </section>
   </div>
 </template>
 
@@ -58,9 +59,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.section {
-  padding-left:0px;
-}
+
 h3 {
   margin: 40px 0 0;
 }
