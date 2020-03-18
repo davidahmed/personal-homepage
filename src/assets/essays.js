@@ -1,29 +1,24 @@
+import { Democracy } from './resources/essays/democracy.js'
+import { John } from './resources/essays/john.js'
+import { PerceptionStrong } from './resources/essays/perception-strong.js'
+import { PerceptionWeak } from './resources/essays/perception-weak.js'
+import { StructuringCollegeYears } from './resources/essays/structuring-college-years.js'
+import { Internet } from './resources/essays/internet.js'
+import { DreadKnowledge } from './resources/essays/knowledge.js'
+
 export var Essays;
 
 Essays = [
-	{
-		title: 'Structuring your college years',
-		content: 'something_beautiful',
-		meta: {
-			published: true,
-			slug: 'structuring-college-years'
-		}
-	},
-	{
-		title: 'Why to dread knowledge',
-	},
+	StructuringCollegeYears,
+	DreadKnowledge,
 	{
 		title:  'The Anti-Hysteria',
 	},
 	{
 		title:  'Problem with Analogies',
 	},
-	{
-		title:  'Fabula exstant ex democratia',
-	},
-	{
-		title:  'How I see the Internet',
-	},
+	Democracy,
+	Internet,
 	{
 		title:  'Living the 20s in 2000s'
 	},
@@ -57,16 +52,7 @@ Essays = [
 	{
 		title:  'Why Philosophy is (mostly) useless',
 	},
-	{
-		title: 'The strong Theorem of Perception',
-		type: 'musing',
-		content: "<p>If there exists at least one way of perceiving a thing, \
-		then there exists at least one more way of perceiving the same thing. \
-		<hr>Proof: The one other way of perceiving the thing is to not perceive it. \
-		Hence, the existence of an alternate way to perceive is proven.</p>",
-		meta: {
-			published: true,
-			slug: 'perception-strong'
-		}
-	}
+	PerceptionStrong,
+	PerceptionWeak,
+	John,
  ]
