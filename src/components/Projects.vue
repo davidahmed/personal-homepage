@@ -1,18 +1,22 @@
 <template>
 	<div>
-		<section class="section">
-		<Essay/>
-		</section>
+		<div class="section"><router-view/></div>
 	</div>
 </template>
 
 <script>
-import Essay from './utilities/Essay.vue'; 
+import { Projects } from '../assets/projects.js'
+
 export default {
-	name: 'Essays',
+	name: 'Projects',
 	components: {
-		Essay
-	}
+
+	},
+	data() {
+		return {
+			essays: Projects,
+		}
+	},
 }
 </script>
 
