@@ -4,6 +4,7 @@
 		<h2 class="title">{{ project.title }}</h2>
 		<img :src=project.imageLink>
 		<p v-if="typeof(project.imageCredits) !== 'undefined'"> Image Credits: {{ project.imageCredits }}</p>
+		<br>
 		<div v-html="project.content"></div>
 		</div>
 	</div>
