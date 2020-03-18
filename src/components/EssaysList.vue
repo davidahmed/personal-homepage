@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section class="section has-padding-medium">
-		<h2 class="subtitle"> Essays </h2>
+		<h1 class="subtitle"> Essays </h1>
 		<p class="has-padding-medium"> These are essays from my personal writings, most of them won’t be available until I get the time and courage to type, format and post them here. </p>
 		<br>
 		<div v-bind:key="essay.title" v-for="essay in essays">
