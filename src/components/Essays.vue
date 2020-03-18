@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<div class="section"/>
 		<div class="section"><router-view/></div>
 	</div>
 </template>
