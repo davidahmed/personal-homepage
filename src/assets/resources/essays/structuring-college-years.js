@@ -1,7 +1,7 @@
 export var StructuringCollegeYears = 	{
 	title: 'Structuring your college years',
 	meta: {
-		published: true,
+		published: false,
 		slug: 'structuring-college-years'
 	},
 	content:

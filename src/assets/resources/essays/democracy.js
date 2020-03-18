@@ -8,8 +8,8 @@ Democracy = {
 	},
 	content:
 	`
-<div class="section">
-<br>Not so unlike the animals in the classic political novel Animal Farm, the modern ‘civilized’ man too has to take a weird oath- “democracy good, non-democracy bad”. The oath is so deeply gnarled into our myopic outlook and understanding of governance that most of us will at first fail to recognize the weirdness in the statement- exactly like the animals that innocently chimed “four legs good, two legs bad”. As we shall see, such a simplistic approach to governance is not only naïve but also dangerous. How often do we ask ourselves how democratic a democracy is? An even more deeper and dangerous set of questions could be asked if we look at its different implementations, its vulnerabilities, and the ends to which we expect to be a solution for.
+<h2 class="subtitle"> Or, The Myth of Democracy</h2>
+<br>Not so much unlike the animals in the classic political novel Animal Farm, the modern ‘civilized’ man too has to take a weird oath- “democracy good, non-democracy bad”. The oath is so deeply gnarled into our myopic outlook and understanding of governance that most of us will at first fail to recognize the weirdness in the statement- exactly like the animals that innocently chimed “four legs good, two legs bad”. As we shall see, such a simplistic approach to governance is not only naïve but also dangerous. How often do we ask ourselves how democratic a democracy is? An even more deeper and dangerous set of questions could be asked if we look at its different implementations, its vulnerabilities, and the ends to which we expect to be a solution for.
 
 <p>Before we begin describing democracy in more specific terms, it is important (though not essential) for us to consider two relevant concepts- state, and power. In his paper titled Limited Statehood, Risse shows that Governance without a state is possible (Risse 9). For the purposes of this paper, however, I adopt the definition of democracy as a contingency to the concept of state; precisely, because this paper refers to modern state, which I have assumed to be pre-necessitated by a modern democratic state. There are two broad approaches that have been adopted to define the modern state. One way is in terms of what a state does and the interests it serves, and the other way is in terms of infrastructure i.e. how the state is structured rather that what interest it may serve (Gill 2). We will utilize both versions, more so, to exhaust the possibilities of the applicability of our claims. Power, then, can be described as the medium which serves to achieve the interests of the state, or to maintain its infrastructure (Gill 27).</p>
 
@@ -23,8 +23,9 @@ Democracy = {
 
 <p>In some ways, one can aptly refer to the 21st century as the age of infatuation with democracy. The idea became an ideology, and as Orwell would put it, in the hands of two-legged pigs it became a tool. Starting with World War I, democracy as an ideology has been used to massacre people, plunder resources, curb fundamental rights, and sometimes even as a justification for devastating wars on peace (Chan). Before we too become or are recruited by the grand ungodly god-like Captain Ahab of democracy in today’s international context, let us first pause for a moment and first ask why we are seeking democracy and to what extent of the ideal we want to realize. This way, even though we might be slow in reaching the democratic utopia, but we will at least not be living in a sustained delusion instead of the realization of a true democracy.</p>
 </div>
-<span class="has-text-weight-bold">Bibliography</span>
 <div class="section">
+
+<span class="has-text-weight-bold">Bibliography</span>
 <ol type="1">
 <li>Chan, Steve; In Search of Democratic Peace: Problems and Promise. Mershon International Studies Review, Volume 41, 1 May 1997, 59–91.</li>
 <li>“Domination and Legitimacy.” Max Weber: Economy and Society, vol. 2, University of California Press, pp. 941–955.</li>
