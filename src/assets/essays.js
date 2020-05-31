@@ -5,11 +5,13 @@ import { PerceptionWeak } from './resources/essays/perception-weak.js'
 import { StructuringCollegeYears } from './resources/essays/structuring-college-years.js'
 import { Internet } from './resources/essays/internet.js'
 import { DreadKnowledge } from './resources/essays/knowledge.js'
+import { SkippingClasses } from './resources/essays/skippingClasses'
 
 export var Essays;
 
 Essays = [
 	StructuringCollegeYears,
+	SkippingClasses,
 	DreadKnowledge,
 	{
 		title:  'The Anti-Hysteria',
