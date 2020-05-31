@@ -22,5 +22,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.section{
+	font-size: 1.1rem;
+}
 
 </style>
