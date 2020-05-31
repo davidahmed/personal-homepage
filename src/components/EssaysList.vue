@@ -2,7 +2,7 @@
 	<div>
 		<section class="section has-padding-medium">
 		<h1 class="title"> Essays </h1>
-		<p class="has-padding-medium"> These are essays from my personal writings, most of them won’t be available until I get the time and courage to type, format and post them here. </p>
+		<p class="has-padding-medium"> These are essays from my personal writings, most of them won’t be available until I get the time and courage to type, format and post them here. Currently, in no specific order.</p>
 		<br>
 		<div v-bind:key="essay.title" v-for="essay in essays">
 			<p class="has-text-weight-bold has-padding-medium">

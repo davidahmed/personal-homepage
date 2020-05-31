@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueAnalytics from 'vue-analytics';
 
 import App from './App.vue'
 import Library from './components/Library.vue'
@@ -8,6 +9,7 @@ import Skills from './components/Skills.vue'
 import Essays from './components/Essays.vue'
 import EssaysList from './components/EssaysList.vue'
 import Essay from './components/utilities/Essay.vue'
+import Academic from './components/Academic.vue'
 
 import Projects from './components/Projects.vue'
 import ProjectsList from './components/ProjectsList.vue'
@@ -18,12 +20,17 @@ import Project from './components/utilities/Project.vue'
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
+// Configuration VueAnalytics
+Vue.use(VueAnalytics, {
+	id: 'UA-163385520-1'
+  });
+
 require("./assets/main.scss")
 
 
 const routes = [
-	{ 
-		path: '/', 
+	{
+		path: '/',
 		component: Home
 	},
 	{
@@ -31,9 +38,13 @@ const routes = [
 		component: Library,
 	},
 	{
+		path: '/academic',
+		component: Academic,
+	},
+	{
 		path: '/essays',
 		component: Essays,
-		props: true, 
+		props: true,
 		children : [{
 			path: ':slug',
 			name: 'essays.detail',
