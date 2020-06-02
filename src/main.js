@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueAnalytics from 'vue-analytics';
 
 import App from './App.vue'
 import Library from './components/Library.vue'
@@ -20,10 +19,6 @@ import Project from './components/utilities/Project.vue'
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
-// Configuration VueAnalytics
-Vue.use(VueAnalytics, {
-	id: 'UA-163385520-1'
-  });
 
 require("./assets/main.scss")
 
