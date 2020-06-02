@@ -12,6 +12,8 @@ export var Essays;
 Essays = [
 	StructuringCollegeYears,
 	SkippingClasses,
+	Democracy,
+	Internet,
 	DreadKnowledge,
 	{
 		title:  'The Anti-Hysteria',
@@ -19,8 +21,6 @@ Essays = [
 	{
 		title:  'Problem with Analogies',
 	},
-	Democracy,
-	Internet,
 	{
 		title:  'Living the 20s in 2000s'
 	},
