@@ -22,7 +22,6 @@ export var StructuringCollegeYears = 	{
 	put them in a list. I think I was lucky to have them ordered in this way, and it worked in my case; 
 	but I don't think that the order is necessary. </p>
 
-	<p> Roughly the schedule that my college years followed.</p>
 	<p><span class="has-text-weight-bold">Freshman:</span> Begin a new life. If your highschool to college
 	 progression seems too smooth, something is wrong. Your essays should get crisper or weirder.</p>
 	<p><span class="has-text-weight-bold">Sophomore:</span> Start studying everything you can. 
