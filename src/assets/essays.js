@@ -10,8 +10,8 @@ import { SkippingClasses } from './resources/essays/skippingClasses'
 export var Essays;
 
 Essays = [
-	StructuringCollegeYears,
 	SkippingClasses,
+	StructuringCollegeYears,
 	Democracy,
 	Internet,
 	DreadKnowledge,
