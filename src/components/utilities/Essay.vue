@@ -16,7 +16,6 @@ export default{
 	props: ['title'],
 	computed: {
 		essay: function(){
-
 			for (var i=0; i<Essays.length; i++){
 				let slug = this.$route.params.slug
 				if (Essays[i]['meta'] && Essays[i]['meta']['slug'] === slug){
@@ -25,6 +24,14 @@ export default{
 			}
 			return []
 		}
+	},
+	mounted() {
+		window.gtag('config', 'UA-163385520-1', 
+		{'page_path': '/essays/'+this.$route.params.slug});
 	}
 }
+
 </script>
+
+<style scoped>
+</style>

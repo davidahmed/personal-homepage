@@ -52,7 +52,11 @@ export default {
             return false;
           });
         }
-  }
+  },
+  mounted() {
+		window.gtag('config', 'UA-163385520-1', 
+		{'page_path': '/bookshelf'});
+	}
 
 }
 </script>

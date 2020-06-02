@@ -88,6 +88,9 @@ export default {
 			return filterEssays(Essays, 'personal')
 		}
 	}
-
 }
+
+window.gtag('config', 'UA-163385520-1', {'page_path': '/essays'});
+
+
 </script>
